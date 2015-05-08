@@ -1,0 +1,23 @@
+{
+  "name" : "GiphyRoulette",
+  "manifest_version": 2,
+  "version" : "1.0.1",
+  "description" : "grab a random gif",
+  "background" : {
+    "scripts": ["giphy.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "http://api.giphy.com/*",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "browser_action" : {
+    "default_icon" : "icon.png",
+    "default_popup": "giphy.html",
+    "default_title": "give me a gif!" // tooltip
+  }
+}
